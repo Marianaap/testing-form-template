@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual de Testes</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <h1>Manual de Testes</h1>
+  <form id="testForm">
+
+    <label>
+      Título
+      <input type="text" id="testTitle" maxlength="50" required />
+    </label>
+
+    <label>
+      Tipo do teste
+      <input type="text" id="testType" maxlength="50" required />
+    </label>
+
+    <label>
+      Descrição
+      <textarea id="testDescription" maxlength="400" required></textarea>
+    </label>
+
+    <div class="rowContainer">
+      <label>
+        Prioridade
+        <select id="testPriority">
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
+        </select>
+      </label>
+
+      <label>
+        Data do teste
+        <input type="date" id="testDate" required />
+      </label>
+    </div>
+
+    <div class="rowContainer">
+      <label>
+        Projeto
+        <input type="text" id="projectName" maxlength="50" required />
+      </label>
+
+      <label>
+        Ambiente
+        <select id="environment">
+          <option value="Desenvolvimento">Desenvolvimento</option>
+          <option value="Homologação">Homologação</option>
+          <option value="Produção">Produção</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <input type="file" id="testEvidence" multiple accept="image/*" style="display: none;" />
+        <button type="button" id="uploadBtn">Anexar evidências</button>
+      </label>
+      <div id="previewGrid" class="image-grid"></div>
+    </div>
+
+    <div>
+      <button type="button" id="copyTextBtn">Copiar</button>
+      <button type="button" id="generatePdfBtn">Gerar PDF</button>
+    </div>
+  </form>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

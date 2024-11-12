@@ -1,0 +1,19 @@
+{
+  "name": "testing-form-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite src",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "jspdf": "^2.5.2",
+    "npm": "^10.9.0"
+  }
+}
